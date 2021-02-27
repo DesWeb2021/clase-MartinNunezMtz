@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Tiene el atributo no importa el valor*/
+        [name] {
+            background-color: cadetblue;
+        }
+        /*Atributo con el valor exacto*/
+        [for="name"] {
+            text-transform: uppercase;
+        }
+        /*Atributo con la PALABRA en el valor*/
+        [alt~="Logo"] {
+            height: 50px;
+        }
+        /*Atributo que el valor inicie con la PALABRA*/
+        [id|="parrafo"] {
+            border: solid 2px red;
+        }
+        /*Atributo que el valor inicie con la CADENA*/
+        [id^="p"] {
+            font-size: 20px;
+        }
+        /*Atribuo que el valor termine con la CADENA*/
+        [name$="e"] {
+            margin-left: 20px;
+        }
+        /*Atributo que el valor contiene la CADENA*/
+        [for*="name"] {
+            color: sienna;
+        }
+    </style>
+</head>
+<body>
+    <p id="parrafo-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Inventore voluptate cupiditate veniam assumenda voluptatibus,
+    nostrum vel facilis dolores! Consectetur officiis ad quo eum eius
+    iure quae nemo illo incidunt. Voluptates.</p>
+    
+    <p id="parrafo-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Inventore voluptate cupiditate veniam assumenda voluptatibus,
+    nostrum vel facilis dolores! Consectetur officiis ad quo eum eius
+    iure quae nemo illo incidunt. Voluptates.</p>
+
+    <p id="parrafo-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Inventore voluptate cupiditate veniam assumenda voluptatibus,
+    nostrum vel facilis dolores! Consectetur officiis ad quo eum eius
+    iure quae nemo illo incidunt. Voluptates.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim optio numquam id esse nostrum culpa pariatur quidem ea cum minus quas doloremque nobis doloribus similique voluptates, sit blanditiis impedit nisi.</p>
+
+    <img src="Aczino edit.jpg" alt="Logo">
+
+    <form>
+        <label for="name">Nombre</label>
+        <input type="text" name="name">
+        <br>
+        <label for="lastname1">Apellido Paterno</label>
+        <input type="text" name="lastname1">
+        <br>
+        <label for="lastname2">Apellidos Materno</label>
+        <input type="text" name="lastname2">
+        <br>
+        <label for="phone">Teléfono</label>
+        <input type="tel" name="phone">
+    </form>
+</body>
+</html>
