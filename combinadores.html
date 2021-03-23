@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container p {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /*Elementos hijos en el primer nivel*/
+        .container > p {
+            text-align: justify;
+        }
+
+        .container > div + p {
+            text-align: right;
+        }
+
+        div + p {
+            color: green;
+        }
+
+        div ~ p {
+            border: solid red 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam asperiores 
+        fuga magnam possimus modi culpa aliquam, quia, neque nam, repellendus pariatur 
+        deserunt. Omnis explicabo ducimus ipsam, inventore architecto magnam? Reiciendis.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam asperiores 
+        fuga magnam possimus modi culpa aliquam, quia, neque nam, repellendus pariatur 
+        deserunt. Omnis explicabo ducimus ipsam, inventore architecto magnam? Reiciendis.</p>
+
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt repellendus 
+            voluptatum sapiente nemo cumque alias, ex vel. Alias animi nostrum repudiandae 
+            tenetur unde magnam dolorum maiores debitis expedita nemo. Veritatis?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam asperiores 
+            fuga magnam possimus modi culpa aliquam, quia, neque nam, repellendus pariatur 
+            deserunt. Omnis explicabo ducimus ipsam, inventore architecto magnam? Reiciendis.</p>
+        </div>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt repellendus 
+        voluptatum sapiente nemo cumque alias, ex vel. Alias animi nostrum repudiandae 
+        tenetur unde magnam dolorum maiores debitis expedita nemo. Veritatis?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam asperiores 
+        fuga magnam possimus modi culpa aliquam, quia, neque nam, repellendus pariatur 
+        deserunt. Omnis explicabo ducimus ipsam, inventore architecto magnam? Reiciendis.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt repellendus 
+        voluptatum sapiente nemo cumque alias, ex vel. Alias animi nostrum repudiandae 
+        tenetur unde magnam dolorum maiores debitis expedita nemo. Veritatis?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam asperiores 
+        fuga magnam possimus modi culpa aliquam, quia, neque nam, repellendus pariatur 
+        deserunt. Omnis explicabo ducimus ipsam, inventore architecto magnam? Reiciendis.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt repellendus 
+        voluptatum sapiente nemo cumque alias, ex vel. Alias animi nostrum repudiandae 
+        tenetur unde magnam dolorum maiores debitis expedita nemo. Veritatis?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam asperiores 
+        fuga magnam possimus modi culpa aliquam, quia, neque nam, repellendus pariatur 
+        deserunt. Omnis explicabo ducimus ipsam, inventore architecto magnam? Reiciendis.</p>
+    </div>
+</body>
+</html>
