@@ -1,3 +1,5 @@
+* { box-sizing: border-box; }
+
 .border { border: solid 1px black; }
 .img-fluid { max-width: 100%; height: auto; }
 
@@ -18,6 +20,59 @@
 
 .d-inline-block { display: inline-block; }
 .d-block { display: block; }
+
+.table { width: 100%; border-collapse: collapse; }
+.table > thead th { 
+    border: solid black; 
+    border-width: 2px 0px;
+}
+.table td { 
+    border-top: solid darkgray; 
+    border-width: 1px 0px;
+}
+
+.table td, .table th { padding: 0.5em 0.25em; }
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.scroll-y {
+    height: 50px;
+    overflow-y: auto;
+}
+
+.btn {
+    border: solid 1px;
+    border-radius: 0.25em;
+    padding: 0.4em;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+.btn-primary { 
+    background-color: darkred;
+    border-color: darkred;
+    color: white; 
+}
+.btn-primary:hover {
+    cursor: pointer;
+    background-color: white;
+    color: darkred;
+}
+
+.btn-secondary { 
+    background-color: teal;
+    border-color: teal;
+    color: white; 
+}
+.btn-secondary:hover {
+    cursor: pointer;
+    background-color: white;
+    color: teal;
+}
 
 @media (min-width: 0px) {
     .d-sm-inline-block { display: inline-block; }
