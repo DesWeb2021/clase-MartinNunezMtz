@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hola mundo</h1>
+
+    <div id="section">
+        <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam corporis, asperiores 
+        laudantium natus accusamus aspernatur placeat obcaecati neque. Dolor dicta nihil corrupti 
+        eos deserunt quisquam velit officiis et cumque quod?</p>
+    </div>
+        
+    <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam corporis, asperiores 
+    laudantium natus accusamus aspernatur placeat obcaecati neque. Dolor dicta nihil corrupti 
+    eos deserunt quisquam velit officiis et cumque quod?</p>
+
+    <script src="app.js"></script>
+    <script>
+        var x = 1;
+        let z = 5;
+
+        const pi = 3.1416
+
+        //Este método imprime en la página
+        //document.write(x);
+
+        // Abre una alaerta en el navegador
+        //alert(x);
+
+        //Imprime en la consola del inspeccionador
+        console.log(x);
+        
+        console.log(pi);
+
+        var x = "Uno";
+
+        var suma = x + z;
+
+        console.log(suma);
+
+        console.log(y);
+
+        console.log(Suma(2, 4));
+
+        function Suma(a, b){
+            return a + b;
+        }
+
+        var section = document.getElementById("section");
+
+        console.log(section);
+
+        var h1 = document.getElementsByTagName("h1");
+
+        console.log(h1[0]);
+
+        var p = document.getElementsByClassName("p");
+
+        console.log(p);
+
+        var query = document.querySelectorAll("div > p");
+
+        console.log(query)
+;    </script>
+</body>
+</html>
