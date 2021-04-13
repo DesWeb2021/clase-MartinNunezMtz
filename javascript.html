@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .aux {
+            color: blue;
+            padding:  10px;
+            border: 2px;
+            border-color: red;
+            border-style: solid;
+        }
+    </style>
 </head>
 <body>
     <h1>Hola mundo</h1>
@@ -14,11 +23,83 @@
         laudantium natus accusamus aspernatur placeat obcaecati neque. Dolor dicta nihil corrupti 
         eos deserunt quisquam velit officiis et cumque quod?</p>
     </div>
+
+    <img src="" alt="UASLP logo">
         
     <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam corporis, asperiores 
     laudantium natus accusamus aspernatur placeat obcaecati neque. Dolor dicta nihil corrupti 
     eos deserunt quisquam velit officiis et cumque quod?</p>
 
+    <p id="nuevo"></p>
+
+    <script>
+        var section = document.getElementById("section");
+
+        console.log(section.innerHTML);
+        console.log(section.innerText);
+
+        //section.style.color = "blue";
+        section.className = "aux";
+
+        var imagen = document.querySelector("img");
+
+        imagen.setAttribute("src", "UASLP logo.jpg");
+        console.log(imagen.src);
+
+        imagen.remove();
+
+        var parrafo = document.getElementById("nuevo");
+
+        parrafo.innerHTML = "Este es el <b>nuevo</b> párrafo";
+    </script>
+
+    <script>
+        var w = "A";
+
+        var html = 
+            `<ul>
+                <li> Elemento ${w}</li>
+                <li> Elemento X</li>
+                <li> Elemento Y</li>
+            </ul>`;
+        
+            document.body.innerHTML = document.body.innerHTML + html;
+
+    </script>
+
+    <!--<script>
+        var lista = document.createElement("ul");
+
+        var elem_x = document.createElement("li");
+
+        var texto = document.createTextNode("Elemento X");
+
+        elem_x.appendChild(texto);
+
+        lista.appendChild(elem_x);
+
+        var elem_y = document.createElement("li");
+
+        var texto = document.createTextNode("Elemento Y");
+
+        elem_y.appendChild(texto);
+        
+        lista.appendChild(elem_y);
+
+        var elem_w = document.createElement("li");
+
+        var texto = document.createTextNode("Elemento W");
+
+        elem_w.appendChild(texto);
+        
+        lista.insertBefore(elem_w, elem_x);
+
+        console.log(lista);
+
+        document.body.appendChild(lista);
+    </script>-->
+
+    <!--
     <script src="app.js"></script>
     <script>
         var x = 1;
@@ -66,6 +147,6 @@
         var query = document.querySelectorAll("div > p");
 
         console.log(query)
-;    </script>
+;    </script>-->
 </body>
 </html>
