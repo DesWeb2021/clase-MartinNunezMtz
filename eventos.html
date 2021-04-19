@@ -9,7 +9,7 @@
 <body>
     <button onclick="saluda()">Presiona aquí</button>
 
-    <p>
+    <p id="1">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ex ipsum totam fuga 
         aliquam natus aliquid quaerat sint autem, quibusdam sunt voluptate eligendi assumenda 
         voluptatibus quia illo eum ab nulla! Lorem ipsum dolor sit amet, consectetur adipisicing 
@@ -17,7 +17,7 @@
         pariatur rem est possimus dicta fugiat, animi necessitatibus rerum minima? Pariatur.
     </p>
 
-    <p>
+    <p id="2">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ex ipsum totam fuga 
         aliquam natus aliquid quaerat sint autem, quibusdam sunt voluptate eligendi assumenda 
         voluptatibus quia illo eum ab nulla! Lorem ipsum dolor sit amet, consectetur adipisicing 
@@ -35,6 +35,7 @@
         <input type="password" name="pass">
         <br>
         <input type="submit" value="Iniciar sesión">
+        <button type="submit">Iniciar sesión</button>
     </form>
 
     <script>
@@ -47,11 +48,14 @@
         };
 
         function saluda() {
+            console.log(e.target)
+
             console.log("Hola mundo");
         }
 
         function imprime() {
-            console.log("Sobre el párrafo");
+            //console.log(e.target)
+            Console.log("Sobre el párrafo" + e.target.id);
         }
 
         var div = document.getElementById("aux");
@@ -64,6 +68,10 @@
         function revisaFormulario(e) {
             e.preventDefault();
             e.stopPropagation();
+
+            console.log(e);
+
+            console.log("Mandando formulario...");
         }
     </script>
 </body>
