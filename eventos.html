@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="saluda()">Presiona aquí</button>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ex ipsum totam fuga 
+        aliquam natus aliquid quaerat sint autem, quibusdam sunt voluptate eligendi assumenda 
+        voluptatibus quia illo eum ab nulla! Lorem ipsum dolor sit amet, consectetur adipisicing 
+        elit. Earum temporibus dolorem mollitia illum aperiam optio fuga iste voluptatibus esse 
+        pariatur rem est possimus dicta fugiat, animi necessitatibus rerum minima? Pariatur.
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ex ipsum totam fuga 
+        aliquam natus aliquid quaerat sint autem, quibusdam sunt voluptate eligendi assumenda 
+        voluptatibus quia illo eum ab nulla! Lorem ipsum dolor sit amet, consectetur adipisicing 
+        elit. Earum temporibus dolorem mollitia illum aperiam optio fuga iste voluptatibus esse 
+        pariatur rem est possimus dicta fugiat, animi necessitatibus rerum minima? Pariatur.
+    </p>
+
+    <div id="aux"></div>
+
+    <form action="" id="formulario">
+        <label for="username">Nombre de usuario</label>
+        <input type="text" name="username">
+        <br>
+        <label for="pass">Contraseña</label>
+        <input type="password" name="pass">
+        <br>
+        <input type="submit" value="Iniciar sesión">
+    </form>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", saluda);
+
+        var p = document.getElementsByTagName("p");
+
+        for (var i = 0; i < p.length; i++) {
+            p[i].addEventListener("mouseover", imprime);
+        };
+
+        function saluda() {
+            console.log("Hola mundo");
+        }
+
+        function imprime() {
+            console.log("Sobre el párrafo");
+        }
+
+        var div = document.getElementById("aux");
+
+        div.innerHTML = "<p onmouseover='imprime()'>Este es un nuevo párrofo</p>";
+
+        var form = document.getElementById("formulario");
+        form.addEventListener("submit", revisaFormulario);
+
+        function revisaFormulario(e) {
+            e.preventDefault();
+            e.stopPropagation();
+        }
+    </script>
+</body>
+</html>
